@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e3561e4-5dab-4f0f-8502-eb00ff5cacf5" name="Changes" comment="Avance en el proyecto, vistas de menu y datos del menu.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/alura/controller/ConversionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/alura/controller/TipoConversionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/alura/dao/ConversionDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/alura/dao/TipoConversionDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/alura/factory/ConnectionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/alura/model/Conversion.java" afterDir="false" />
+    <list default="true" id="4e3561e4-5dab-4f0f-8502-eb00ff5cacf5" name="Changes" comment="3. Avance en el proyecto, vistas de menu y datos del menu.">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/alura/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/alura/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/alura/controller/OpcionesConversion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/alura/model/Conversiones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/alura/model/TipoConversion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/alura/view/MenuConversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/alura/view/MenuConversion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,11 +51,17 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -132,7 +128,7 @@
       <workItem from="1671155889274" duration="6829000" />
       <workItem from="1671239777865" duration="3905000" />
       <workItem from="1671244892205" duration="1684000" />
-      <workItem from="1671246844373" duration="7304000" />
+      <workItem from="1671246844373" duration="7894000" />
     </task>
     <task id="LOCAL-00001" summary="Primer Commit de inicio de repositorio">
       <created>1670894408267</created>
@@ -148,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671154518273</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="3. Avance en el proyecto, vistas de menu y datos del menu.">
+      <created>1671254453454</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671254453454</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +160,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Primer Commit de inicio de repositorio" />
     <MESSAGE value="Avance en el proyecto, vistas de menu y datos del menu." />
-    <option name="LAST_COMMIT_MESSAGE" value="Avance en el proyecto, vistas de menu y datos del menu." />
+    <MESSAGE value="3. Avance en el proyecto, vistas de menu y datos del menu." />
+    <option name="LAST_COMMIT_MESSAGE" value="3. Avance en el proyecto, vistas de menu y datos del menu." />
   </component>
 </project>
