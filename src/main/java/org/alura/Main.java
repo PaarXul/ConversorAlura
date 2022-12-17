@@ -1,5 +1,6 @@
 package org.alura;
 
+import org.alura.model.TipoConversion;
 import org.alura.view.MenuConversion;
 
 import javax.swing.*;

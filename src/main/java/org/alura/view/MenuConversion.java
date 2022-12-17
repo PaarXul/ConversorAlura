@@ -1,27 +1,29 @@
 package org.alura.view;
 
-import org.alura.controller.OpcionesConversion;
+import org.alura.controller.ConversionController;
+import org.alura.controller.TipoConversionController;
+import org.alura.model.TipoConversion;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
 
 public class MenuConversion extends JFrame {
 
     private static final long serialVersionUID=1L;
 
     private JLabel LabelConversion;
-    private JComboBox<Object> comboConversiones;
+    private JComboBox<TipoConversion> comboConversiones;
     private JButton BotonAceptar, BotonCancelar;
-    private  OpcionesConversion opcionesConversion;
+    private TipoConversionController tipoConversionController;
+    private ConversionController conversionController;
 
 
     public MenuConversion(){
         super("Menu");
-        this.opcionesConversion = new OpcionesConversion();
+        this.tipoConversionController = new TipoConversionController();
+        this.conversionController = new ConversionController();
         Container container = getContentPane();
         setLayout(null);
         configurarFormularioOpcionesMenu(container);
@@ -29,12 +31,15 @@ public class MenuConversion extends JFrame {
     }
 
     private void configurarFormularioOpcionesMenu(Container container){
+
         LabelConversion = new JLabel("Elegir Conversion");
         LabelConversion.setBounds(10, 10, 150, 20);
         LabelConversion.setForeground(Color.BLACK);
         comboConversiones= new JComboBox<>();
-        var listaConversionesdisponibles = this.opcionesConversion.ListaConversiones();
-        listaConversionesdisponibles.forEach(conversion -> comboConversiones.addItem(conversion.getNombre()));
+        comboConversiones.addItem(new TipoConversion(0, "Elige una Categoría"));
+        var tipoConversiones = this.tipoConversionController.listar();
+        tipoConversiones.forEach(tipoConversion -> comboConversiones.addItem(tipoConversion));
+
         comboConversiones.setBounds(10, 35, 215, 30);
 
         BotonCancelar = new JButton("Cancelar");

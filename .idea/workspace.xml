@@ -4,18 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e3561e4-5dab-4f0f-8502-eb00ff5cacf5" name="Changes" comment="Primer Commit de inicio de repositorio">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/alura/controller/OpcionesConversion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/alura/model/Conversiones.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/alura/view/MenuConversion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/alura/view/MenuMonedas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4e3561e4-5dab-4f0f-8502-eb00ff5cacf5" name="Changes" comment="Avance en el proyecto, vistas de menu y datos del menu.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/alura/controller/ConversionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/alura/controller/TipoConversionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/alura/dao/ConversionDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/alura/dao/TipoConversionDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/alura/factory/ConnectionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/alura/model/Conversion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/alura/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/alura/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/alura/controller/OpcionesConversion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/alura/model/Conversiones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/alura/model/TipoConversion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/alura/view/MenuConversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/alura/view/MenuConversion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +56,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Informatica SRI/OneDrive/Esencials/Actividades/Alura-java/ConversorAlura",
+    "last_opened_file_path": "C:/Users/Gian/OneDrive/Esencials/Actividades/Alura-java/ConversorAluraDeprecated",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,6 +68,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Gian\OneDrive\Esencials\Actividades\Alura-java\ConversorAlura\src\main\java" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.MenuConversion">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
@@ -121,6 +128,11 @@
       <workItem from="1670988052200" duration="403000" />
       <workItem from="1670988467537" duration="393000" />
       <workItem from="1670989515729" duration="1573000" />
+      <workItem from="1671154446984" duration="1129000" />
+      <workItem from="1671155889274" duration="6829000" />
+      <workItem from="1671239777865" duration="3905000" />
+      <workItem from="1671244892205" duration="1684000" />
+      <workItem from="1671246844373" duration="7304000" />
     </task>
     <task id="LOCAL-00001" summary="Primer Commit de inicio de repositorio">
       <created>1670894408267</created>
@@ -129,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670894408267</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Avance en el proyecto, vistas de menu y datos del menu.">
+      <created>1671154518273</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671154518273</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +156,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Primer Commit de inicio de repositorio" />
-    <option name="LAST_COMMIT_MESSAGE" value="Primer Commit de inicio de repositorio" />
+    <MESSAGE value="Avance en el proyecto, vistas de menu y datos del menu." />
+    <option name="LAST_COMMIT_MESSAGE" value="Avance en el proyecto, vistas de menu y datos del menu." />
   </component>
 </project>
