@@ -60,7 +60,8 @@ public class MenuConversion extends JFrame {
     private void AccionesFormMenu(){
         BotonAceptar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                ConversionMonedas();
+                var conversion = (TipoConversion) comboConversiones.getSelectedItem();
+                ConversionMonedas(conversion);
             }
         });
 
@@ -72,8 +73,10 @@ public class MenuConversion extends JFrame {
         });
 
     }
-    private void ConversionMonedas(){
-        new MenuMonedas(this);
+    private void ConversionMonedas(TipoConversion conversion){
+
+        new ConversionTipo(this,conversion);
+
     }
 
 

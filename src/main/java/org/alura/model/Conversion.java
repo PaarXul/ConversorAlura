@@ -11,6 +11,11 @@ public class Conversion {
     private double valor2;
     private Integer TipoConversionId;
 
+    public Conversion(String cambio1, String cambio2) {
+        this.cambio1 = cambio1;
+        this.cambio2 = cambio2;
+    }
+
     public Conversion(String cambio1, String cambio2, double valor1, double valor2) {
         this.cambio1 = cambio1;
         this.cambio2 = cambio2;
@@ -86,7 +91,7 @@ public class Conversion {
     @Override
     public String toString() {
         return String.format(
-                "{ id: %d, nombre: %s, descripcion: %s, cantidad: %d }",
-                this.id, this.cambio1, this.cambio2, this.cambio1,this.valor2);
+                "%s a %s",
+                this.cambio1, this.cambio2);
     }
 }

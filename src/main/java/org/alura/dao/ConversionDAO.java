@@ -19,7 +19,7 @@ public class ConversionDAO {
             PreparedStatement statement;
             statement = con.prepareStatement(
                     "INSERT INTO CONVERSION "
-                            + "(CAMBIO1, CAMBIO2, VALOR1,VALOR2, categoria_id)"
+                            + "(CAMBIO1, CAMBIO2, VALOR1,VALOR2, TIPOCONVERSION_ID)"
                             + " VALUES (?, ?, ?, ?,?)", Statement.RETURN_GENERATED_KEYS);
 
             try (statement) {
