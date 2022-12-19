@@ -146,18 +146,8 @@ public class ConversionTipo extends JFrame {
     }
 
     public void convertirMetodo(Conversion conversion, double cantidad){
-        double resultado;
         boolean op = OpcionValor1.isSelected();
-        double val1 = conversion.getValor1();
-        double val2 = conversion.getValor2();
-
-        if (op){
-            resultado= cantidad / val1;
-        }else {
-            resultado= cantidad * val1;
-        }
-        System.out.println("la operacion de:"+conversion.getCambio1()+ " y "+conversion.getCambio2()+" = "+resultado);
-        labelResultado.setText(String.valueOf(resultado));
+        labelResultado.setText(this.conversionController.MetodoCalcularConversion(op,conversion,cantidad));
 
     }
 

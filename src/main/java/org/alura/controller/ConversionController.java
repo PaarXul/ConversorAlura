@@ -36,10 +36,15 @@ public ConversionController(){
     public List<Conversion> listar(TipoConversion tipoConversion) {
         return conversionDAO.listar(tipoConversion);
     }
-
-    public void convertir (){
-
-
+public String MetodoCalcularConversion(boolean op,Conversion conversion, double cantidad){
+    double resultado;
+    double val1 = conversion.getValor1();
+    double val2 = conversion.getValor2();
+    if (op){
+        resultado= cantidad / val1;
+    }else {
+        resultado= cantidad * val1;
     }
-
+    return String.valueOf(resultado);
+}
 }
