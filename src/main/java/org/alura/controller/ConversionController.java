@@ -37,4 +37,9 @@ public ConversionController(){
         return conversionDAO.listar(tipoConversion);
     }
 
+    public void convertir (){
+
+
+    }
+
 }

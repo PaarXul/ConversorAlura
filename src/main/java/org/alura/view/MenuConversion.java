@@ -33,19 +33,22 @@ public class MenuConversion extends JFrame {
     private void configurarFormularioOpcionesMenu(Container container){
 
         LabelConversion = new JLabel("Elegir Conversion");
-        LabelConversion.setBounds(10, 10, 150, 20);
+
         LabelConversion.setForeground(Color.BLACK);
         comboConversiones= new JComboBox<>();
         comboConversiones.addItem(new TipoConversion(0, "Elige una Categoría"));
         var tipoConversiones = this.tipoConversionController.listar();
         tipoConversiones.forEach(tipoConversion -> comboConversiones.addItem(tipoConversion));
 
-        comboConversiones.setBounds(10, 35, 215, 30);
+
 
         BotonCancelar = new JButton("Cancelar");
         BotonAceptar = new JButton("Aceptar");
+        LabelConversion.setBounds(10, 10, 150, 20);
+        comboConversiones.setBounds(10, 35, 215, 30);
         BotonAceptar.setBounds(10, 80, 90, 25);
         BotonCancelar.setBounds(135, 80, 90, 25);
+
 
         container.add(LabelConversion);
         container.add(comboConversiones);
