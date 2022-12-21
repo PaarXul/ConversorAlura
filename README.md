@@ -147,5 +147,11 @@ TIPOCONVERSION_ID
 );
 
 > **Consultas Básicas**
+> 
 >select * FROM CONVERSION;   
 >select * FROM TIPOCONVERSION;
+
+![Screenshot_3.png](src%2Fmain%2Fjava%2Forg%2Falura%2Fimg%2FScreenshot_3.png)
+![Screenshot_2.png](src%2Fmain%2Fjava%2Forg%2Falura%2Fimg%2FScreenshot_2.png)
+![Screenshot_4.png](src%2Fmain%2Fjava%2Forg%2Falura%2Fimg%2FScreenshot_4.png)
+![Screenshot_5.png](src%2Fmain%2Fjava%2Forg%2Falura%2Fimg%2FScreenshot_5.png)

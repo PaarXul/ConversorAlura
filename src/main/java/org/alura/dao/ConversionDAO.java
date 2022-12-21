@@ -145,7 +145,7 @@ public class ConversionDAO {
                                 resultSet.getString("CAMBIO1"),
                                 resultSet.getString("CAMBIO2"),
                                 resultSet.getDouble("VALOR1"),
-                                resultSet.getDouble("VALOR1")
+                                resultSet.getDouble("VALOR2")
                         ));
                     }
                 }
