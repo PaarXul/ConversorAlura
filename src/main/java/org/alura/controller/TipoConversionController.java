@@ -17,8 +17,4 @@ public class TipoConversionController {
     public List<TipoConversion> listar() {
         return tipoConversionDAO.listar();
     }
-
-    public List<TipoConversion> cargaReporte() {
-        return this.tipoConversionDAO.listarConConversion();
-    }
 }

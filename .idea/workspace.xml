@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e3561e4-5dab-4f0f-8502-eb00ff5cacf5" name="Changes" comment="5. Avance en el proyecto, funcionalidades terminadas.">
+    <list default="true" id="4e3561e4-5dab-4f0f-8502-eb00ff5cacf5" name="Changes" comment="Finale.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/alura/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/alura/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/alura/controller/ConversionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/alura/controller/ConversionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/alura/controller/TipoConversionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/alura/controller/TipoConversionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/alura/view/ConversionTipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/alura/view/ConversionTipo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -181,7 +184,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -193,7 +208,8 @@
     <MESSAGE value="3. Avance en el proyecto, vistas de menu y datos del menu." />
     <MESSAGE value="3. Avance en el proyecto, lista de conversiones por categoria." />
     <MESSAGE value="5. Avance en el proyecto, funcionalidades terminadas." />
-    <option name="LAST_COMMIT_MESSAGE" value="5. Avance en el proyecto, funcionalidades terminadas." />
+    <MESSAGE value="Finale." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finale." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ConversorAluraDeprecated$Main.ic" NAME="Main Coverage Results" MODIFIED="1671423712812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
