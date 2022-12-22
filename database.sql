@@ -1,0 +1,12 @@
+create database conversor_alura;
+use conversor_alura;
+create table TIPOCONVERSION( id int auto_increment, nombre varchar(50) not null, descripcion varchar(250) not null, primary key(id) )engine = InnoDB;
+insert into TIPOCONVERSION( nombre, descripcion )values('MONEDAS','Conversor de tipo monedas internacionales'),('TEMPERATURAS','Conversor de tipo temperaturas'),('MEDIDAS','Conversor de tipo medidas');
+create table CONVERSION( id int auto_increment, cambio1 varchar(50), cambio2 varchar(50), valor1 double not null default 0, valor2 double not null default 0, primary key(id) )engine = InnoDB;
+AlTER table CONVERSION ADD column TIPOCONVERSION_ID INT ;
+ALTER table CONVERSION ADD foreign key (TIPOCONVERSION_ID) REFERENCES TIPOCONVERSION(ID);
+insert into CONVERSION( cambio1, cambio2, valor1, valor2, TIPOCONVERSION_ID )values( 'PESO','DOLAR', 950,1,1 );
+insert into CONVERSION( cambio1, cambio2, valor1, valor2, TIPOCONVERSION_ID )values( 'PESO','EURO', 870,1,1 ); insert into CONVERSION( cambio1, cambio2, valor1, valor2, TIPOCONVERSION_ID )values( 'Celsius','Fahrenheit', 0,32,2 ); insert into CONVERSION( cambio1, cambio2, valor1, valor2, TIPOCONVERSION_ID )values( 'Celsius','Kelvin', 0,273.15,2 ); insert into CONVERSION( cambio1, cambio2, valor1, valor2, TIPOCONVERSION_ID )values( 'Fahrenheit','Kelvin', 32,273.15,2 );
+insert into CONVERSION( cambio1, cambio2, valor1, valor2, TIPOCONVERSION_ID )values( 'Kilómetro','Metro', 1,1000,3 ); insert into CONVERSION( cambio1, cambio2, valor1, valor2, TIPOCONVERSION_ID )values( 'Kilómetro','Milla', 1,0.621371,3 ); insert into CONVERSION( cambio1, cambio2, valor1, valor2, TIPOCONVERSION_ID )values( 'Metro','Milla', 1,0.000621371,3 );
+select * FROM CONVERSION;
+select * FROM TIPOCONVERSION;
